@@ -1,7 +1,11 @@
-
 # TodoList App
 
 A CLI-based To-Do List application in Java
+
+
+## Live Demo:
+
+https://github.com/user-attachments/assets/b8ef7bb4-53fb-4c05-be73-ef17b47025a7
 
 
 ## Features:
