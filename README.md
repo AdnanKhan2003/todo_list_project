@@ -1,6 +1,8 @@
 
 # TodoList App
+
 A CLI-based To-Do List application in Java
+
 
 ## Features:
 
