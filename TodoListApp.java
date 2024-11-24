@@ -18,8 +18,8 @@ class Task {
 
 public class TodoListApp {
 
-    private static final Scanner scanner = new Scanner(System.in);
-    private static final ArrayList<Task> tasks = new ArrayList<>();
+    public static final Scanner scanner = new Scanner(System.in);
+    public static final ArrayList<Task> tasks = new ArrayList<>();
 
     public static void main(String[] args) {
         while (true) {
@@ -45,7 +45,6 @@ public class TodoListApp {
                 case 6:
                     System.out.println("Exiting the To-Do List Application. Goodbye!");
                     scanner.close();
-                    System.exit(0);
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -54,7 +53,7 @@ public class TodoListApp {
     }
 
     // Display menu options
-    private static void showMenu() {
+    public static void showMenu() {
         System.out.println("\n--- To-Do List Application ---");
         System.out.println("1. Add a To-Do Item");
         System.out.println("2. Edit a To-Do Item");
@@ -66,7 +65,7 @@ public class TodoListApp {
     }
 
     // Get user input for menu option
-    private static int getUserChoice() {
+    public static int getUserChoice() {
         int choice = -1;
         try {
             choice = Integer.parseInt(scanner.nextLine());
@@ -77,7 +76,7 @@ public class TodoListApp {
     }
 
     // Add a new task
-    private static void addTask() {
+    public static void addTask() {
         System.out.print("Enter the description of the new task: ");
         String description = scanner.nextLine();
         tasks.add(new Task(description));
@@ -86,7 +85,7 @@ public class TodoListApp {
     }
 
     // Edit an existing task
-    private static void editTask() {
+    public static void editTask() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks to edit!");
             return;
@@ -109,7 +108,7 @@ public class TodoListApp {
     }
 
     // Delete a task
-    private static void deleteTask() {
+    public static void deleteTask() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks to delete!");
             return;
@@ -130,7 +129,7 @@ public class TodoListApp {
     }
 
     // Sort the tasks alphabetically
-    private static void sortTasks() {
+    public static void sortTasks() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks to sort!");
             return;
@@ -142,7 +141,7 @@ public class TodoListApp {
     }
 
     // View the list of tasks
-    private static void viewTasks() {
+    public static void viewTasks() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks in your To-Do list.");
         } else {
