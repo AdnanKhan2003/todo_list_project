@@ -64,7 +64,6 @@ A CLI-based To-Do List application in Java
 | Method | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `.showMenu()` | `void` | Displays the menu with options.
- |
  | `.getUserChoice()` | `int` | Reads and returns the user's menu choice.
  |
  | `.addTask()` | `void` | Adds a new task to the list.
